@@ -13,17 +13,15 @@ namespace sidebar.iOS
 	public partial class MenuView : MvxViewController<MenuViewModel>
 	{
 		private CGColor borderColor = new CGColor(45, 177, 128);
-		private UIColor TextColor = UIColor.White;
+		private UIColor TextColor = UIColor.White,BackgroundColor = UIColor.FromRGB(11,63,114);
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
 			// Perform any additional setup after loading the view, typically from a nib.
-			var backgroundImage = UIImage.FromBundle("menu-background");
 		
-			View.BackgroundColor = UIColor.FromRGB(11,85,125);//UIColor.FromPatternImage(backgroundImage);
+			View.BackgroundColor = BackgroundColor;//UIColor.FromPatternImage(backgroundImage);
 
-			View.ClipsToBounds = true;
 			MenuTableView.BackgroundColor = UIColor.Clear;
 
 			//Corner radius and color
@@ -33,9 +31,8 @@ namespace sidebar.iOS
 			ProfileImage.Layer.MasksToBounds = true;
 
 			//Label colors
-			BigLabel.TextColor = UIColor.White;
-			SmallLabel.TextColor = UIColor.White;
-
+			BigLabel.TextColor = TextColor;
+			SmallLabel.TextColor = TextColor;
 
 			MenuTableView.Source = new MenuTableViewSource(ViewModel.MenuItems);
 			MenuTableView.AllowsSelection = false; //no selection and no styling

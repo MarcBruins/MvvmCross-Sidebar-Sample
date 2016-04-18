@@ -103,7 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\menu-background.imageset\menu_background%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -187,9 +186,6 @@
     <BundleResource Include="Resources\Images.xcassets\ic_device_hub_white.imageset\ic_device_hub_white.png" />
     <BundleResource Include="Resources\Images.xcassets\ic_device_hub_white.imageset\ic_device_hub_white_2x.png" />
     <BundleResource Include="Resources\Images.xcassets\ic_device_hub_white.imageset\ic_device_hub_white_3x.png" />
-    <BundleResource Include="Resources\Images.xcassets\menu-background.imageset\Contents.json" />
-    <BundleResource Include="Resources\Images.xcassets\menu-background.imageset\menu-background.png" />
-    <BundleResource Include="Resources\Images.xcassets\menu-background.imageset\menu-background%402x.png" />
     <BundleResource Include="Resources\MvvM_Cross_Logo_Small.png" />
   </ItemGroup>
 </Project>

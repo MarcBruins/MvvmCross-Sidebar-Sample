@@ -46,7 +46,7 @@
     </objects>
     <resources>
         <image name="ic_build_white" width="72" height="72"/>
-        <image name="menu-background" width="520" height="763"/>
+        <image name="menu-background" width="346.666656" height="508.666656"/>
         <image name="profile_pic.jpg" width="253" height="253"/>
         <image name="ic_credit_card_white" width="72" height="72"/>
         <image name="ic_explore_white" width="72" height="72"/>
