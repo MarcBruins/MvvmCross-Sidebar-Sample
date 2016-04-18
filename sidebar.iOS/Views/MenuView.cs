@@ -13,17 +13,16 @@ namespace sidebar.iOS
 	public partial class MenuView : MvxViewController<MenuViewModel>
 	{
 		private CGColor borderColor = new CGColor(45, 177, 128);
-		private UIColor TextColor = UIColor.White,BackgroundColor = UIColor.FromRGB(11,63,114);
+		private UIColor TextColor = UIColor.White,BackgroundColor = UIColor.FromRGB(14,76,116);
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
 			// Perform any additional setup after loading the view, typically from a nib.
 		
-			View.BackgroundColor = BackgroundColor;//UIColor.FromPatternImage(backgroundImage);
+			View.BackgroundColor = BackgroundColor;
 
 			MenuTableView.BackgroundColor = UIColor.Clear;
-
 			//Corner radius and color
 			ProfileImage.Layer.CornerRadius = (ProfileImage.Frame.Width / 2);
 			ProfileImage.Layer.BorderWidth = 1.5f;
@@ -36,10 +35,12 @@ namespace sidebar.iOS
 
 			MenuTableView.Source = new MenuTableViewSource(ViewModel.MenuItems);
 			MenuTableView.AllowsSelection = false; //no selection and no styling
-			MenuTableView.TableFooterView = new UIView(CGRect.Empty);
-			//MenuTableView.SeparatorStyle = UITableViewCellSeparatorStyle.None;
 			MenuTableView.SeparatorColor =  UIColor.FromRGBA (187, 187, 187,0.1f);
 
+			MenuTableView.TableFooterView = new UIView(CGRect.Empty) { BackgroundColor = BackgroundColor };
+
+
+			//MenuTableView.TableFooterView.Hidden = false;
 		}
 
 		public override void DidReceiveMemoryWarning ()

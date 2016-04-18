@@ -20,7 +20,7 @@ namespace sidebar.iOS
 		{
 			base.ViewDidLoad ();
 			// Perform any additional setup after loading the view, typically from a nib.
-
+			//View.BackgroundColor = UIColor.Black;
 
 			ViewModel.ShowMenu ();
 		}
