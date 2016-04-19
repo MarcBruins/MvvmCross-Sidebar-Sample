@@ -138,10 +138,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\sidebar.Core\sidebar.Core.csproj">
-      <Project>{57977911-0E27-495B-9208-257DC2DC462C}</Project>
-      <Name>sidebar.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\MvvmCross-iOSSupport-master\MvvmCross.iOS.Support.XamarinSidebar\MvvmCross.iOS.Support.XamarinSidebar.csproj">
       <Project>{29579644-AF3E-412F-86EF-FA413C5A08CA}</Project>
       <Name>MvvmCross.iOS.Support.XamarinSidebar</Name>
@@ -153,6 +149,10 @@
     <ProjectReference Include="..\..\MvvmCross-iOSSupport-master\MvvmCross.iOS.Support.JASidePanels\MvvmCross.iOS.Support.JASidePanels.csproj">
       <Project>{0E866698-7054-4786-A43F-E6E0E99D90A1}</Project>
       <Name>MvvmCross.iOS.Support.JASidePanels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sidebar.Core\SidebarSample.Core.csproj">
+      <Project>{57977911-0E27-495B-9208-257DC2DC462C}</Project>
+      <Name>SidebarSample.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

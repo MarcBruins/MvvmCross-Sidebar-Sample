@@ -9,7 +9,7 @@ using Foundation;
 namespace sidebar.iOS
 {
 	[MvxPanelPresentation(MvxPanelEnum.Center, MvxPanelHintType.ResetRoot, true)]
-	public partial class CenterView : MvxViewController<CenterViewModel>
+	public partial class CenterView : MvxViewController<ContentViewModel>
 	{
 
 		public CenterView () 
@@ -21,6 +21,7 @@ namespace sidebar.iOS
 			base.ViewDidLoad ();
 			// Perform any additional setup after loading the view, typically from a nib.
 			//View.BackgroundColor = UIColor.Black;
+			View.BackgroundColor = UIColor.White;
 
 			ViewModel.ShowMenu ();
 		}

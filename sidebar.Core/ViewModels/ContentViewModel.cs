@@ -3,15 +3,14 @@ using MvvmCross.Core.ViewModels;
 
 namespace sidebar.Core.ViewModels
 {
-	public class CenterViewModel : MvxViewModel
+	public class ContentViewModel : MvxViewModel
 	{
-		public CenterViewModel ()
+		public ContentViewModel ()
 		{
 		}
 
 		public void ShowMenu()
 		{
-			// Loads the flyout menu on the left
 			ShowViewModel<MenuViewModel>();
 		}
 	}

@@ -32,7 +32,7 @@ namespace sidebar.iOS
 
 		protected override IMvxIosViewPresenter CreatePresenter()
 		{
-			return new MvxSidebarPresenter((MvxApplicationDelegate)ApplicationDelegate, Window);
+			return new MvxSidePanelsPresenter((MvxApplicationDelegate)ApplicationDelegate, Window);
 		}
     }
 }

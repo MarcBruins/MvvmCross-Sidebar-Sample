@@ -11,7 +11,7 @@ namespace sidebar.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<ViewModels.CenterViewModel>();
+			RegisterAppStart<ViewModels.ContentViewModel>();
         }
     }
 }

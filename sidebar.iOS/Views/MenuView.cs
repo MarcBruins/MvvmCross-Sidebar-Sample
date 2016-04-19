@@ -21,6 +21,8 @@ namespace sidebar.iOS
 			// Perform any additional setup after loading the view, typically from a nib.
 		
 			View.BackgroundColor = BackgroundColor;
+			// This is the default value of edgesForExtendedLayout
+			EdgesForExtendedLayout = UIRectEdge.None; 
 
 			MenuTableView.BackgroundColor = UIColor.Clear;
 			//Corner radius and color

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sidebar.Core", "sidebar.Core\sidebar.Core.csproj", "{57977911-0E27-495B-9208-257DC2DC462C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SidebarSample.Core", "sidebar.Core\SidebarSample.Core.csproj", "{57977911-0E27-495B-9208-257DC2DC462C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sidebar.iOS", "sidebar.iOS\sidebar.iOS.csproj", "{63E84B37-CD28-45BF-B461-6C59FE7F8E6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SidebarSample.iOS", "sidebar.iOS\SidebarSample.iOS.csproj", "{63E84B37-CD28-45BF-B461-6C59FE7F8E6E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.iOS.Support", "..\MvvmCross-iOSSupport-master\MvvmCross.iOS.Support\MvvmCross.iOS.Support.csproj", "{E6A71CD5-82A0-49E9-A04D-166F9E8F76F9}"
 EndProject
