@@ -1,10 +1,10 @@
 using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
+using MvvmCross.iOS.Support.JASidePanels;
+using MvvmCross.iOS.Support.XamarinSidebar;
 using MvvmCross.iOS.Views.Presenters;
 using MvvmCross.Platform.Platform;
 using UIKit;
-using MvvmCross.iOS.Support.XamarinSidebar;
-using MvvmCross.iOS.Support.JASidePanels;
 
 namespace sidebar.iOS
 {
@@ -32,7 +32,7 @@ namespace sidebar.iOS
 
 		protected override IMvxIosViewPresenter CreatePresenter()
 		{
-			return new MvxSidePanelsPresenter((MvxApplicationDelegate)ApplicationDelegate, Window);
+			return new MvxSidebarPresenter((MvxApplicationDelegate)ApplicationDelegate, Window);
 		}
     }
 }

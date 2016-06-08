@@ -4,6 +4,8 @@ using Foundation;
 using CoreGraphics;
 using System.Collections.Generic;
 using sidebar.Core;
+using MvvmCross.Platform;
+using MvvmCross.iOS.Support.SidePanels;
 
 namespace sidebar.iOS
 {
@@ -52,6 +54,13 @@ namespace sidebar.iOS
 			return cell;
 		}
 
+		public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
+		{
+			MenuModel item = TableItems[indexPath.Row];
+			item.Navigate.Execute();
+			Mvx.Resolve<IMvxSideMenu>().Close();
+
+		}
 
 		public override nfloat GetHeightForRow (UITableView tableView, NSIndexPath indexPath)
 		{

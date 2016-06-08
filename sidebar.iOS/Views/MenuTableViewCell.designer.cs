@@ -11,25 +11,27 @@ using UIKit;
 
 namespace sidebar.iOS
 {
-	[Register ("MenuTableViewCell")]
-	partial class MenuTableViewCell
-	{
-		[Outlet]
-		UIKit.UILabel LabelMenuItemName { get; set; }
+    [Register ("MenuTableViewCell")]
+    partial class MenuTableViewCell
+    {
+        [Outlet]
+        UIKit.UILabel LabelMenuItemName { get; set; }
 
-		[Outlet]
-		UIKit.UIImageView MenuItemImage { get; set; }
 
-		void ReleaseDesignerOutlets ()
-		{
-			if (LabelMenuItemName != null) {
-				LabelMenuItemName.Dispose ();
-				LabelMenuItemName = null;
-			}
-			if (MenuItemImage != null) {
-				MenuItemImage.Dispose ();
-				MenuItemImage = null;
-			}
-		}
-	}
+        [Outlet]
+        UIKit.UIImageView MenuItemImage { get; set; }
+
+        void ReleaseDesignerOutlets ()
+        {
+            if (LabelMenuItemName != null) {
+                LabelMenuItemName.Dispose ();
+                LabelMenuItemName = null;
+            }
+
+            if (MenuItemImage != null) {
+                MenuItemImage.Dispose ();
+                MenuItemImage = null;
+            }
+        }
+    }
 }

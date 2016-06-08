@@ -36,8 +36,7 @@ namespace sidebar.iOS
 			SmallLabel.TextColor = TextColor;
 
 			MenuTableView.Source = new MenuTableViewSource(ViewModel.MenuItems);
-			MenuTableView.AllowsSelection = false; //no selection and no styling
-			MenuTableView.SeparatorColor =  UIColor.FromRGBA (187, 187, 187,0.1f);
+				MenuTableView.SeparatorColor =  UIColor.FromRGBA (187, 187, 187,0.1f);
 
 			MenuTableView.TableFooterView = new UIView(CGRect.Empty) { BackgroundColor = BackgroundColor };
 
